@@ -2025,38 +2025,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37587,7 +37555,7 @@ var render = function() {
               "data-target": "#staticBackdrop"
             }
           },
-          [_vm._v("\n                    Agregar\n                ")]
+          [_vm._v("\n                Agregar\n            ")]
         ),
         _vm._v(" "),
         _c(
@@ -37664,15 +37632,6 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "modal-footer" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-secondary",
-                        attrs: { type: "button", "data-dismiss": "modal" }
-                      },
-                      [_vm._v("Close")]
-                    ),
-                    _vm._v(" "),
                     _vm.update == 0
                       ? _c(
                           "button",
@@ -37705,21 +37664,19 @@ var render = function() {
                         )
                       : _vm._e(),
                     _vm._v(" "),
-                    _vm.update != 0
-                      ? _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-dark",
-                            attrs: { type: "button", "data-dismiss": "modal" },
-                            on: {
-                              click: function($event) {
-                                return _vm.clearFields()
-                              }
-                            }
-                          },
-                          [_vm._v("Atrás")]
-                        )
-                      : _vm._e()
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-dark",
+                        attrs: { type: "button", "data-dismiss": "modal" },
+                        on: {
+                          click: function($event) {
+                            return _vm.clearFields()
+                          }
+                        }
+                      },
+                      [_vm._v("Atrás")]
+                    )
                   ])
                 ])
               ]
@@ -37775,9 +37732,7 @@ var render = function() {
             0
           )
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6" })
+      ])
     ])
   ])
 }

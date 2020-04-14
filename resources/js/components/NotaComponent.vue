@@ -3,16 +3,12 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Lista de tareas</h2>
-                 <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
-                        Agregar
-                    </button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
+                    Agregar
+                </button>
 
-
-
-
-
-                     <!-- Modal  -->
+                <!-- Modal  -->
                 <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -35,28 +31,21 @@
 
                             </div>
                             <div class="modal-footer">
-                               
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                 <!-- Botón que añade los datos del formulario, solo se muestra si la variable update es igual a 0-->
+
+                                
+                                <!-- Botón que añade los datos del formulario, solo se muestra si la variable update es igual a 0-->
                                 <button type="button" v-if="update == 0" @click="saveNota()" class="btn btn-success"
                                     data-dismiss="modal">Añadir</button>
                                 <!-- Botón que modifica la tarea que anteriormente hemos seleccionado, solo se muestra si la variable update es diferente a 0-->
                                 <button type="button" v-if="update != 0" @click="updateNota()" class="btn btn-warning"
                                     data-dismiss="modal">Actualizar</button>
                                 <!-- Botón que limpia el formulario y inicializa la variable a 0, solo se muestra si la variable update es diferente a 0-->
-                                <button type="button" v-if="update != 0" @click="clearFields()" class="btn btn-dark"
+                                <button type="button"  @click="clearFields()" class="btn btn-dark"
                                     data-dismiss="modal">Atrás</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
 
                 <table class="table text-center m-4">
                     <!--Creamos una tabla que mostrará todas las tareas-->
@@ -77,8 +66,6 @@
                                 <button type="button" class="btn btn-primary" @click="loadFieldsUpdate(nota)"
                                     data-toggle="modal" data-target="#staticBackdrop">Modificar</button>
 
-
-                                   
                                 <!--Botón que borra la tarea que seleccionemos-->
                                 <button class="btn btn-danger" @click="deleteNota(nota)">Borrar</button>
                             </td>
@@ -86,28 +73,9 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-md-6">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
         </div>
     </div>
 </template>
-
 
 
 
